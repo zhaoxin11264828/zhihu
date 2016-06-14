@@ -1,0 +1,131 @@
+<div id="zhliebiao" ng-controller="mainCtrl">
+	<!-- top -->
+	<div class="top">
+		<div class="main">
+			<div class="shousuo icon-sousuo"></div>
+			<input type="text" placeholder="搜索话题、问题或人">
+			<div class="add icon-tianjia" ><a href=""></a></div>
+		</div>
+	</div>
+
+
+<!-- main -->
+<div class="items">
+	<ul>
+		<li class="item" ng-repeat="v in list">
+		
+			<div class="list1">
+			<div class="wrap">
+			<a href="">
+				<div class="img">
+					<img src="" alt="">
+				</div>
+				<span>热门回答</span>
+				</a>
+			</div>
+
+				
+				<div class="genduo icon-gengduo1"
+				 ng-click="kaiguan()" 
+				 >
+					
+				</div>
+
+				<div class="tips" ng-click="delete(v)" ng-if="toggle">不感兴趣</div>
+			</div>
+				
+
+			<a href="#/liebiao/{{$index}}">
+			<div class="imgs" ng-if="v.istupian">
+				
+			</div>
+			<div class="list2">
+			    <span class="titlel">
+			    {{v.title}}
+			    	<!-- 星巴克是否存在问题 如有  怎么解决 -->
+			    
+			    </span>
+				
+			</div>
+			<div class="list3">
+			<p>
+			{{v.desc}}
+				<!-- 星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决 -->
+			}
+			</p>
+				
+			</div>
+			<div class="list4">
+				<span><span class="num1">123</span>赞同</span>
+				<span><span class="num2">234</span>评论</span>
+				<span class="num1">关注问题</span>
+			</div>
+			</a>
+		</li>
+
+
+		<li class="item">
+			<div class="list1">
+				<div class="img">
+					<img src="" alt="">
+				</div>
+				<span>热门回答</span>
+				<div class="genduo icon-gengduo1">
+					
+				</div>
+			</div>
+			<div class="imgs">
+				
+			</div>
+			<div class="list2">
+			    <span class="titlel">
+			    	星巴克是否存在问题 如有  怎么解决
+			    </span>
+				
+			</div>
+			<div class="list3">
+			<p>
+				星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决
+			</p>
+				
+			</div>
+			<div class="list4">
+				<span><span class="num1">123</span>赞同</span>
+				<span><span class="num2">234</span>评论</span>
+				<span class="num1">关注问题</span>
+			</div>
+		</li>
+
+
+		<!-- <li class="item">
+			<div class="list1">
+				<div class="img">
+					<img src="" alt="">
+				</div>
+				<span>热门回答</span>
+				<div class="genduo icon-gengduo1">
+					
+				</div>
+			</div>
+			<div class="list2">
+			    <span class="titlel">
+			    	星巴克是否存在问题 如有  怎么解决
+			    </span>
+				
+			</div>
+			<div class="list3">
+			<p>
+				星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决星巴克是否存在问题 如有  怎么解决
+			</p>
+				
+			</div>
+			<div class="list4">
+				<span><span class="num1">123</span>赞同</span>
+				<span><span class="num2">234</span>评论</span>
+				<span class="num1">关注问题</span>
+			</div>
+		</li> -->
+
+	</ul>
+</div>
+</div>
