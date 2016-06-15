@@ -215,7 +215,10 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background: #EAEEF4; }
   #zhliebiao .top {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*position: relative;*/
     height: 1.68rem;
     width: 100%;
     background: #1E8AE8;
@@ -251,13 +254,14 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
         margin-right: 0.2rem;
         margin-top: -0.2rem; }
   #zhliebiao .items {
+    padding-top: 1.7rem;
     padding-bottom: 1.5rem; }
     #zhliebiao .items a {
       width: 100%;
       height: 100%;
       display: inline-block; }
   #zhliebiao .item {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
     margin-top: 0.23rem;
     width: 100%;
@@ -359,9 +363,10 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
   #zhfaxian .items {
     padding-bottom: 1.5rem;
     background: #EAEEF4;
-    width: 100%; }
+    width: 100%;
+    display: inline-block; }
     #zhfaxian .items .banner {
-      position: absolute;
+      position: fixed;
       top: 1.91rem;
       width: 100%;
       height: 5.26rem;
@@ -380,9 +385,10 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
         background: url("../images/banner1.jpg") no-repeat;
         background-size: 10.85rem 6.35rem; }
     #zhfaxian .items ul {
-      position: absolute;
-      top: 7.17rem;
-      left: 0; }
+      margin-top: 7.5rem;
+      /*position: absolute;
+		top:7.17rem;
+		left: 0;*/ }
       #zhfaxian .items ul .item {
         margin-top: 0.23rem;
         width: 100%;
@@ -602,12 +608,20 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
         background-color: transparent;
         color: #fff; }
   #tixing .main {
+    position: relative;
     background: #ccc;
-    margin-top: 2.45rem; }
+    margin-top: 0.45rem; }
     #tixing .main .item {
+      position: absolute;
+      top: 1.6rem;
+      left: 0;
       width: 100%;
-      height: 0.5rem;
-      background: #fff; }
+      height: 2.5rem;
+      background: #fff;
+      font-size: 0.2rem;
+      padding: 0.54rem 0.65rem 0 0.63rem;
+      box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box; }
       #tixing .main .item .img {
         width: 1.21rem;
         height: 1.21rem;
@@ -615,6 +629,13 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
         border: 1px solid #ccc;
         display: inline-block;
         float: left; }
+      #tixing .main .item .xinxi {
+        font-size: 0.4rem;
+        margin-left: 1.8rem; }
+      #tixing .main .item span {
+        color: #ccc; }
+      #tixing .main .item .desc {
+        color: #999; }
 
 /*关注 私信页*/
 #guanzhu {
