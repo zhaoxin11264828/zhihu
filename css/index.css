@@ -261,7 +261,7 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
       height: 100%;
       display: inline-block; }
   #zhliebiao .item {
-    /*position: relative;*/
+    position: relative;
     display: inline-block;
     margin-top: 0.23rem;
     width: 100%;
@@ -706,5 +706,3 @@ body, ul, li, h1, h2, h3, h4, h5, h6 {
         height: 0.32rem;
         background: url("../images/fanhui.jpg") no-repeat;
         background-size: 0.32rem 0.32rem; }
-
-/*# sourceMappingURL=map/index.css.map */
